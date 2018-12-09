@@ -1,5 +1,6 @@
 import React from 'react'
 import { ListGroup, ListGroupItem } from 'react-bootstrap'
+import PropTypes from 'prop-types'
 
 class User extends React.Component {
   render() {
@@ -18,6 +19,10 @@ class User extends React.Component {
       </div>
     )
   }
+}
+
+User.propTypes = {
+  user: PropTypes.object.isRequired
 }
 
 export default User

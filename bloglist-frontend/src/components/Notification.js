@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Notification = ({ notification }) => {
   if (notification === null) {
     return null
@@ -7,5 +8,6 @@ const Notification = ({ notification }) => {
 
   return <div className={notification.type}>{notification.message}</div>
 }
+
 
 export default Notification
